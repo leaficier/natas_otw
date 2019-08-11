@@ -1,0 +1,8 @@
+Username: natas5
+URL:      http://natas5.natas.labs.overthewire.org
+
+This level deals with editing cookies.
+The website requires you to be logged in to see the password, but there is no way to login.
+Examaning the header, we see a cookie called 'loggedin' and it was set to 0.
+The next logical step would be to set the cookie to 1.
+Do this through firefox dev tools.

@@ -1,0 +1,8 @@
+This level is very basic directory traversal.
+The steps I took were first looking at the source.
+There is a an embedded image with the source address as:
+  files/pixel.png
+This is a hint that there may be more things in the 'files'.
+Next step is to navigate to: natas2.natas.labs.overthewire.org/files
+A directory listing appears.
+The password is in the users.txt file.

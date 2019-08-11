@@ -1,0 +1,7 @@
+Username: natas4
+URL:      http://natas4.natas.labs.overthewire.org
+
+This level is related to the Referer header field.
+The site checks to see if the Referer is set to EXACTLY: http://natas5.natas.labs.overthewire.org/
+All I had to do was go into firefox Developer tools, into the network section, and edit the header.
+After changing the Referer field, you can look in the 'Response' tab to see the answer.

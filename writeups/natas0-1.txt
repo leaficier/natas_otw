@@ -1,0 +1,5 @@
+Username: natas2
+URL:      http://natas2.natas.labs.overthewire.org
+
+The password is inside the source code, however right clicking has been disabled.
+Getting to the HTML code without right clicking just involves going through developer settings on firefox.

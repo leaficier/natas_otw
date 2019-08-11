@@ -1,0 +1,9 @@
+Username: natas3
+URL:      http://natas3.natas.labs.overthewire.org
+
+This one involves the robots.txt file which controls what search engines index
+The hint is in the source:
+  "<!-- No more information leaks!! Not even Google will find it this time... -->"
+Implying that google spiders won't index certain pages because of what's specified in the robots.txt
+When going to /robots.txt we see that it is disallowing indexing of the /s3cr3t/ page
+That page is a directory that has a users.txt file which contains our password

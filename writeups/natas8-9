@@ -1,0 +1,13 @@
+Username: natas9
+URL:      http://natas9.natas.labs.overthewire.org
+
+This level deals with input validation, the source code shows us that there is a PHP
+script that is using the passthru function to run a command on the host and returning
+that output to the page. There is a command injection exploit here. We can change the
+command output by commenting out what file is being grep'd and grep a different file
+ie the password file. The input I used to do this is as follows:
+
+  j /etc/natas_webpass/natas10 #
+
+I searched for a random letter ('j') in the password file, and I added a # to comment
+out the original file.

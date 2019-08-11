@@ -1,0 +1,10 @@
+Username: natas6
+URL:      http://natas6.natas.labs.overthewire.org
+
+To solve this level, we need to input some secret. No way to know what the secret is,
+but we see that something is being included in the script:
+  'include "includes/secret.inc";'
+Navigating to here results in an empty page, however, looking at the source reveals:
+  <? $secret = "FOEIUWGHFEEUHOFUOIU"; ?>
+This is our secret which we will enter on the original page, this returns us the password
+for natas7.

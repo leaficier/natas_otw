@@ -1,0 +1,24 @@
+Username: natas8
+URL:      http://natas8.natas.labs.overthewire.org
+
+This one is another one of those secret input questions. This time, the secret
+is still within the source, but it is encoded in various ways via PHP code. The
+secret is base64 encoded, then reversed, then converted to hex. I wrote some PHP
+code to reverse the operations and find what the secret is without all the encoding.
+Since I don't know PHP very well, I just took the same commands and reversed the order,
+except for the bin2hex function, of which I had to look for a different function (http://mindofscott.com/Opposite_PHP_bin2hex.htm).
+This is my code:
+
+<?php
+$encodedSecret = "3d3d516343746d4d6d6c315669563362";
+
+function decodeSecret($input) {
+	return base64_decode(strrev(pack('H*', $input)));
+}
+
+print decodeSecret($encodedSecret); <---- here is where the secret key gets printed
+
+I just ran this code in an online PHP tester thing.
+  http://sandbox.onlinephpfunctions.com/
+
+Take the output from the PHP code and plug it into the main site for the password.

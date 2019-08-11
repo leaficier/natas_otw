@@ -1,0 +1,2 @@
+Windows command I used to add a .txt extension to all my writeup files:
+  rm * *.txt (rename all, to name+.txt)

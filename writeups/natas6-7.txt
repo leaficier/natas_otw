@@ -1,0 +1,11 @@
+Username: natas7
+URL:      http://natas7.natas.labs.overthewire.org
+
+This one is fairly easy. The page presents two links, the links are using a parameter
+to link to a site. We modify what that link parameter is to get to the file where
+the password is stored for the next level. This is an XSS attack. The link to get the
+password is this:
+http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8
+
+Notice that the 'page' parameter is modified to access the natas8 pass file which
+our user (natas7) has access to.
